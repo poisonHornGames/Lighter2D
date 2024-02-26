@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="Lighter2D" package="com.poisonhorn.lighter2D" version="1.0.0" />
+	<app main="Main" path="Export" file="SampleProject" />
+	
+	<source path="Source" />
+	
+	<haxelib name="openfl" />
+	<haxelib name="starling" />
+	<haxelib name="spritesheet" />
+	<assets path="Assets" rename="assets" />
+	
+</project>
