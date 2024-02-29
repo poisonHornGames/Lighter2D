@@ -1,3 +1,1 @@
-An Amateur's attempt at a game "engine"
-
-very barebones, no animations currently
+A game engine for games produced using Adobe flash, Adobe Animate CC, or software that can export animations to the Small Web Format
