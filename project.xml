@@ -2,13 +2,15 @@
 <project>
 	
 	<meta title="Lighter2D" package="com.poisonhorn.lighter2D" version="1.0.0" />
-	<app main="Main" path="Export" file="SampleProject" />
+	<app main="Main" path="Export" file="Lighter" />
 	
 	<source path="Source" />
 	
 	<haxelib name="openfl" />
 	<haxelib name="starling" />
 	<haxelib name="spritesheet" />
+	<haxelib name="flixel"/>
+	<haxelib name="openfl-animate-atlas"/>
 	<assets path="Assets" rename="assets" />
 	
 </project>

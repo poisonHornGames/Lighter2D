@@ -1,4 +1,4 @@
-package lighter.graphics;
+package lighter;
 
 
 import spritesheet.AnimatedSprite;
