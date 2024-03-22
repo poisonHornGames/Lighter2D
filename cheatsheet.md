@@ -1,5 +1,5 @@
-
 simple setup:
+
     class Main extends lighter.App
     {
     	public function new() {
@@ -10,12 +10,13 @@ simple setup:
     }
 
 a scene:
+
     class YourScene extends lighter.Scene
     {
       public function new() {
         super(starling.utils.color.BLACK);
 
-        // setup your objects here
+        ...setup your objects here
       }
       override update(delta:Float) {
         
