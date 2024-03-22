@@ -14,6 +14,7 @@ class Object extends Sprite {
     public var position:Vector2  = {x: 0, y: 0};
     public var delta:Float;
 
+    
     var time:Int;
     var previousTime:Int;
     public function new() {
@@ -50,5 +51,9 @@ class Object extends Sprite {
     }
     public function update(delta:Float) {
         
+    }
+
+    public function overlap(obj:Object):Bool {
+        return hitTestObject(obj);
     }
 }

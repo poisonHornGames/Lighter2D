@@ -1,36 +1,41 @@
 package;
 
-import openfl.Assets;
-import lighter.animation.Anim;
+import lighter.graphics.Graphic;
+import starling.utils.Color;
+import lighter.graphics.Anim;
 import openfl.ui.Keyboard;
-import lighter.Graphic;
-import openfl.Lib;
-import lighter.Global;
 import lighter.Scene;
 
 class PlayScene extends Scene {
-    var graphic = new Anim("Assets", 16, 16);
+    var graphic = new Anim("assets/sprites", 1);
+    var test = new Graphic("assets/logo.png");
     public function new() {
-        super();
+        super(Color.BLACK);
+        graphic.scale.x = graphic.scale.y = 4;
+        test.scale.x = test.scale.y = 2;
         addChild(graphic);
+        addChild(test);
     }
     override function update(delta:Float) {
-        trace(graphic);
+        //trace(graphic);
+        trace(graphic.overlap(test));
         super.update(delta);
         if(keys[Keyboard.W]) {
-            graphic.y += -8;
+            graphic.position.y += -8;
+            graphic.play();
 
         }
         if(keys[Keyboard.A]) {
-            graphic.x += -8;
-
+            graphic.position.x += -8;
+            graphic.play();
         }
         if(keys[Keyboard.S]) {
-            graphic.y += 8;
-
+            graphic.position.y += 8;
+            graphic.play();
         }
         if(keys[Keyboard.D]) {
-            graphic.x += 8;
+            graphic.position.x += 8;
+            graphic.play();
         }
     }
 }
