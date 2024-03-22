@@ -41,7 +41,6 @@ class Anim extends Object {
     }
     override function update(delta:Float) {
         super.update(delta);
-        trace(frame);
         if(Global.debug) {
             if(keys[Keyboard.P]) {
                 frame += framerate * delta;
